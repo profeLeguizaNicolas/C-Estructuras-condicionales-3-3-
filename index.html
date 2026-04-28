@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C - Condicionales 3</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="Imagenes/icono.png" type="image/png">
+</head>
+<body>
+    <h1>
+        <span class="naranja">C</span> - Condicionales 3, operador módulo <code class="gris">%</code>.
+    </h1>
+    <b>Módulo <code class="gris">%</code>.</b>
+    <p>
+        Comprender el funcionamiento del operador módulo <code class="gris">%</code> como herramienta para analizar divisiones enteras y su aplicación en la resolución de problemas lógicos.
+    </p>
+    <div class="center">
+        <b>¿Qué es el operador módulo?</b>
+    </div>
+    <p>
+        El operador <code class="gris">%</code> permite obtener el resto de una división entre números enteros. A diferencia de la división tradicional, que se enfoca en cuántas veces un número entra en otro, el módulo se centra en lo que queda luego de esa operación.
+    </p>
+    <p>
+        Toda división entre enteros puede analizarse desde dos perspectivas:
+    </p>
+    <ul>
+        <li><b>Cociente</b> → Cantidad de veces que un número entra en otro.</li>
+        <li><b>Resto</b> → Cantidad que no pudo ser agrupada completamente.</li>
+    </ul>
+    <p>
+        Estas dos partes están relacionadas y forman una misma opración, pero cumplen funciones distintas dentro de un programa.
+    </p>
+   <b>Consideraciones importantes</b><br>
+   <ul>
+        <li>Se utiliza con valores enteros.</li>
+        <li>El divisor no puede ser 0.</li>
+   </ul>
+   <b>Ejemplo en <span class="naranja">C</span></b>
+<pre><code class="cpp">1    <span class="celeste">#include &lt;iostream></span>
+2       <span class="celeste">using namespace std;</span>
+3       <span class="violeta">int main</span>(){
+4       <span class="violeta">int a</span><span class="rosa">=</span><span class="naranja">10</span>;
+5       <span class="violeta">int b</span><span class="rosa">=</span><span class="naranja">3</span>;
+6       <span class="violeta">int resto</span>;
+7
+8       <span class="violeta">resto</span><span class="rosa">=</span> <span class="violeta">a</span> <span class="rosa">%</span> <span class="violeta">b</span>;
+9       <span class="violeta">cout</span>&lt;&lt;<span class="verde">"El resto de dividir "</span>&lt;&lt;<span class="violeta">a</span>&lt;&lt;<span class="verde">"por"</span>&lt;&lt; <span class="violeta">b</span> &lt;&lt;<span class="verde">"es:"</span>&lt;&lt;<span class="violeta">resto</span>;
+10       <span class="rosa">return</span> <span class="naranja">0</span>;
+11  }</code></pre>
+    <br>
+    <b>Ejercicios</b>
+    <ol>
+        <li>
+            <p>
+                Escribi un programa en <span class="naranja">C</span> que solicite al usuario ingresar dos números enteros. El programa debe calcular y mostrar el resultado de la división entera entre ambos números, así como también el módulo o residuo de esa división <code class="gris">(Usando el operador %)</code>.
+            </p>
+            <div class="center">
+                <iframe width="1071" height="471" src="https://www.youtube.com/embed/yAO43ib4a58" title="modulo %  ejercicio 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </li>
+        <li>
+            <p>
+                Realiza un programa en <span class="naranja">C</span> que lea un número entero ingresado por el usuario y determine si dicho número es par o impar.
+            </p>
+            <div class="center">
+                <iframe width="1071" height="438" src="https://www.youtube.com/embed/0Fot1XnTKDE" title="modolu % ejercicio 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </li>
+        <li>
+            <p>
+                Escribi un programa en<span class="naranja">C</span> que lea un número decimal pequeño <code>de 0 a 15</code> e imprima su representación binaria de 4 bits. El programa debe realizar divisiones sucesivas entre 2 y almacenar el resto de cada división en variables individuales. Luego debe mostrar la secuencia de bits de forma correcta.
+            </p>
+            <div class="center">
+                <iframe width="1071" height="439" src="https://www.youtube.com/embed/v3SDid5_K7o" title="modulo % ejercicio 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </li>
+        <li>
+            <p>
+                Crea un programa en <span class="naranja">C</span> que muestre un menú con las siguientes opciones: <code class="gris">1)Ejercicio 1</code>, <code class="gris">2)Ejercicio 2</code>, <code class="gris">3)Ejercicio 3</code>, <code class="gris">4)Ejercicio 4</code>. El programa debe permitir al usuario elegir una opción y ejecutar el ejercicio correspondiente, los ejercicios deben ser los de: <code>Estructuras secuenciales</code>. Para cada opción, el programa debe pedir los dato necesarios y mostrar el resultado de la operación solicitada.
+            </p>
+            <div class="center">
+                <iframe width="937" height="570" src="https://www.youtube.com/embed/N6KQN0C1vj8" title="modulo % ejercicio 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </li>
+    </ol>
+ 
+</body>
+</html>
